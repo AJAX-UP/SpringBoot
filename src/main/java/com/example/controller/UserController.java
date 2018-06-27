@@ -16,14 +16,10 @@ public class UserController {
     public String hello() {
         return "hello,Spring Boot";
     }
-    @RequestMapping(value = "/insert")
+    @RequestMapping(value = "/insert1")
     public String insert() {
         userService.insert();
         return "hello,Spring Boot";
     }
-    @RequestMapping(value = "/insert2")
-    public String insert2() {
-        userService.insert();
-        return "hello,Spring Boot";
-    }
+
 }
