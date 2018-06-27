@@ -21,4 +21,9 @@ public class UserController {
         userService.insert();
         return "hello,Spring Boot";
     }
+    @RequestMapping(value = "/insert2")
+    public String insert2() {
+        userService.insert();
+        return "hello,Spring Boot";
+    }
 }
